@@ -8,7 +8,7 @@
 
 .carousel {
     position: relative;
-    width: 30%;
+    width: 40%;
     max-width: 600px;
     overflow: hidden;
     border: 2px solid #ccc;
@@ -23,22 +23,36 @@
 }
 
 .carousel-image {
+    background-color: var(--primary-green);
+    color: white;
     min-width: 100%;
     max-width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: transform 0.5s ease-in-out; /* Transición suave para el efecto hover */
 }
 .carousel-image:hover {
     transform: scale(1.05); /* Incrementa el tamaño de la imagen al hacer hover */
 }
+.carousel-image p {
+    text-align: justify;
+    margin: 0.5rem;
+}
+.img-tools {
+    border-radius: 1rem;
+    border: 5px solid var(--light-green);
 
+}
 
 
 .nav-button {
+    font-size: 2rem;
     background-color: var(--primary-green);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
     border-radius: 50%;
     z-index: 10;
@@ -52,8 +66,10 @@
 
 #prevBtn {
     order: -1; /* Coloca el botón anterior antes del contenedor del carrusel */
+    margin-right: 4rem;
 }
 
 #nextBtn {
     order: 1; /* Coloca el botón siguiente después del contenedor del carrusel */
+    margin-left: 4rem;
 }
