@@ -1,0 +1,52 @@
+@import url(colores.css);
+.cuerpo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    text-align: center;
+}
+
+#box-create-compost {
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#vd-create-compost {
+    width: 40rem;
+    height: 20rem;
+
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--primary-green);
+}
+
+#como-hacer-compost {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin-bottom: 2rem;
+}
+
+#box-how-make-compost {
+    width: 100%;
+}
+#img-how-make-compost {
+    width: 50%;
+    margin-left: 2rem;
+}
+
+#list-things {
+    width: 50%;
+}
+#list-things li {
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: justify;
+}

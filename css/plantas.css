@@ -1,0 +1,60 @@
+.cuerpo, .infografias {
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+.infografias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.infografias hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#box-partes-de-la-planta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#img-partes-de-la-planta {
+    width: 35%;
+}
+
+
+
+#box-infografia-germinacion {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+.box-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img-infografia-germinacion {
+width: 50%;
+}
+
+
+
+#box-mini-juego {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+#mini-juego {
+    width: 400px;
+    height: 300px;
+}

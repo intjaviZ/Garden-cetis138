@@ -1,0 +1,197 @@
+@import url(colores.css);
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--neutral-white);
+    overflow-x: hidden;
+}
+h2 {
+    color: var(--soft-black);
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--primary-green);
+}
+
+.nav-var {
+    background-color: var(--light-gray);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5vh;
+}
+.nav-var a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--soft-black);
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+.nav-var a:hover {
+    background-color: #9e9caf;
+    border-radius: 15px;
+}
+
+.box-infografia {
+    text-align: center;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-infografia h2 {
+    color: var(--soft-black);
+    font-size: 2.5rem;
+}
+
+.infografia-composta {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 70vw;
+    height: 65vh;
+}
+#img-infografia-home{
+    width: 100%;
+    height: 100%;
+}
+
+.box-slogan {
+    background-color: var(--secondary-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    /* opacity: 0.8; */
+}
+.box-slogan h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+
+.box-videos {
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.box-videos h2 {
+    font-size: 2.5rem;
+}
+
+
+
+.box-tarjetas {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.tarjetas-info {
+    padding: 2%;
+    border-radius: 2rem;
+    background-color: var(--light-green);
+    width: 20%;
+    height: 70vh;
+    
+}
+.tarjetas-info h3 {
+    color: white;
+}
+.tarjetas-info p {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+
+.box-video-yt {
+    width: 100%;
+    height: 25vh;
+    background-color: var(--light-green);
+}
+.video-yt {
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+footer {
+    background-color: var(--secondary-green);
+    color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+footer a,
+footer p,
+footer li {
+    font-size: 0.8rem;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#todo-es-culpa-del-small {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#box-contacto-footer,
+#box-participante-footer {
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+}
+#links-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#small-box {
+    width: 100%;
+    padding-bottom: 0.3rem;
+    text-align: center;
+    color: white;
+}
+
+
+
+.box-info {
+    width: 70vw;
+}
+.box-info p{
+    text-align: justify;
+}
+
+
+
+.box-mini-juego {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+.mini-juego {
+    width: 400px;
+    height: 300px;
+}

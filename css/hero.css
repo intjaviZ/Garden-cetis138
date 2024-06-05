@@ -1,0 +1,96 @@
+@import url(colores.css);
+
+#hero {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+#presentacion {
+    background-color: var(--primary-green);
+    margin: 0;
+    width: 55vw;
+    height: 100vh;
+    position: relative;
+}
+#presentacion h1,
+#presentacion h2,
+#presentacion p,
+#presentacion img {
+    margin-left: 1rem;
+    color: white;
+}
+#presentacion h1 {
+    font-size: 4rem;
+}
+#presentacion h2 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+#img-logotipo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute; 
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
+#box-img-hero {
+    background-color: var(--neutral-white);
+    margin: 0;
+    padding: 0;
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img-hero {
+    border-radius: 1rem;
+    width: 66%;
+    height: 88%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations */
+/* 
+fadeInDown para eje Y 
+zoomIn para scale()
+fadeInLeft
+*/
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+        /* transform: translateY(-100px); */
+        /* transform: scale(0.5); */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+        /* transform: translateY(0);  */
+        /* transform: scale(1); */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply animations */
+.animate {
+    opacity: 0;
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+#img-hero.animate {
+    animation: fadeIn 2s ease-out forwards;
+}

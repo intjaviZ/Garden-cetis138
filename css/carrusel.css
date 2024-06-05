@@ -1,0 +1,59 @@
+@import url(colores.css);
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    position: relative;
+    width: 30%;
+    max-width: 600px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out; /* Transición suave para el efecto hover */
+}
+.carousel-image:hover {
+    transform: scale(1.05); /* Incrementa el tamaño de la imagen al hacer hover */
+}
+
+
+
+.nav-button {
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    margin: 0 10px;
+    transition: opacity 0.3s ease-in-out; /* Transición suave para el efecto hover */
+}
+
+.nav-button:hover {
+    opacity: 0.7; /* Hace el botón más opaco al hacer hover */
+}
+
+#prevBtn {
+    order: -1; /* Coloca el botón anterior antes del contenedor del carrusel */
+}
+
+#nextBtn {
+    order: 1; /* Coloca el botón siguiente después del contenedor del carrusel */
+}
